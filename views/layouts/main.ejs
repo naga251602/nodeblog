@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %> | Simple Blog</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="/">Simple Blog</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <% if (user) { %>
+                        <li><a href="/posts/new">Create Post</a></li>
+                        <li><a href="/dashboard">Dashboard</a></li>
+                        <li><a href="/logout">Logout</a></li>
+                    <% } else { %>
+                        <li><a href="/login">Login</a></li>
+                        <li><a href="/register">Register</a></li>
+                    <% } %>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <% if (message) { %>
+            <div class="flash-message">
+                <%= message %>
+            </div>
+        <% } %>
+        <%- body %>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <%= new Date().getFullYear() %> Simple Blog App. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,8 @@
+<div class="single-post">
+    <h2 class="post-title"><%= post.title %></h2>
+    <p class="post-meta">By <%= post.author %> on <%= post.created_at.toLocaleDateString() %></p>
+    <div class="post-content">
+        <p><%= post.content %></p>
+    </div>
+    <a href="/" class="btn btn-secondary">&larr; Back to all posts</a>
+</div>

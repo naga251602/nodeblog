@@ -1,0 +1,17 @@
+<h2 class="page-title">Welcome to Your Dashboard!</h2>
+
+<% if (message) { %>
+    <div class="message success-message"><%= message %></div>
+<% } %>
+
+<div class="dashboard-info">
+    <p>Hello, <%= user.email %>!</p>
+    <p>You are logged in.</p>
+    <p>From here, you can:</p>
+    <ul>
+        <li><a href="/posts/new">Create a New Blog Post</a></li>
+        <li><a href="/">View All Posts</a></li>
+        <li>Manage your profile (future feature)</li>
+    </ul>
+    <a href="/logout" class="btn btn-secondary">Logout</a>
+</div>

@@ -1,0 +1,303 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    border-bottom: 5px solid #007bff;
+}
+
+header h1 {
+    margin: 0;
+    display: inline-block;
+}
+
+header h1 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px 0;
+}
+
+.page-title {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.posts-list .post-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.posts-list .post-card h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.posts-list .post-card h3 a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.posts-list .post-card h3 a:hover {
+    text-decoration: underline;
+}
+
+.post-meta {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 15px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* Single Post Styles */
+.single-post {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.single-post .post-title {
+    color: #007bff;
+    margin-top: 0;
+}
+
+.single-post .post-content p {
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+/* Form Styles */
+.post-form {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding doesn't add to the width */
+    font-size: 1em;
+}
+
+.form-group textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Error Page */
+.error-message {
+    text-align: center;
+    padding: 50px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.error-message p {
+    font-size: 1.2em;
+    color: #dc3545; /* Red for error */
+}
+
+@media (max-width: 768px) {
+    header nav {
+        float: none;
+        text-align: center;
+        margin-top: 10px;
+    }
+    header nav ul li {
+        margin: 0 10px;
+    }
+}
+
+/* ... (existing CSS) ... */
+
+/* Auth Form Styles */
+.auth-form {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    max-width: 400px;
+    margin: 30px auto;
+}
+
+.auth-form p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Messages */
+.message {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.flash-message { /* General style for any message passed via res.locals.message */
+    background-color: #cce5ff;
+    color: #004085;
+    border: 1px solid #b8daff;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Dashboard styles */
+.dashboard-info {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.dashboard-info ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.dashboard-info ul li {
+    margin-bottom: 10px;
+}
+
+.dashboard-info ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
